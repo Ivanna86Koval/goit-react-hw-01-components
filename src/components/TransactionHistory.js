@@ -1,1 +1,3 @@
-export const TransactionHistory = () => {};
+export const TransactionHistory = () => {
+  return <ul>TransactionHistory</ul>;
+};

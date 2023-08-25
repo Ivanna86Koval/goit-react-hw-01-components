@@ -3,13 +3,17 @@ import { Statistics } from './Statistic/Statistics';
 import { FriendList } from './FriendList/FriendList';
 import friends from './FriendList/friends.json';
 import user from './Profile/user.json';
+import { Loyout } from './Loyout';
+import data from './Statistic/data.json';
+import { GlobalStyles } from './GlobalStyles.styled';
 
 export const App = () => {
   return (
-    <div>
+    <Loyout>
       <Profile profile={user} />
-      <Statistics />
+      <Statistics title="Upload stats" stats={data} />
       <FriendList items={friends} />
-    </div>
+      <GlobalStyles></GlobalStyles>
+    </Loyout>
   );
 };

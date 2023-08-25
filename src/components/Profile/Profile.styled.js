@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Passport = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: #eabb7d;
+  background-color: white;
   justify-content: center;
   align-items: center;
   border: 2px solid #000;
@@ -36,4 +36,30 @@ export const UserName = styled.p`
 export const UserText = styled.p`
   font-size: 28px;
   color: #605d5a;
+`;
+export const Active = styled.ul`
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  background-color: #b79262;
+  border-top: 1px solid #6b4d26;
+  width: 100%;
+`;
+
+export const UserActive = styled.li`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #6b4d26;
+  width: 100%;
+  padding: 10px;
+`;
+export const SpanLabel = styled.span`
+  font-size: 16px;
+  display: flex;
+`;
+export const SpanQuantity = styled.span`
+  font-weight: 400;
 `;

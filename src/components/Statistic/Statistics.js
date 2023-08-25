@@ -1,26 +1,32 @@
-export const Statistics = () => {
-  return (
-    <section class="statistics">
-      <h2 class="title">Upload stats</h2>
+import PropTypes from 'prop-types';
 
-      <ul class="stat-list">
-        <li class="item">
-          <span class="label">.docx</span>
-          <span class="percentage">4%</span>
-        </li>
-        <li class="item">
-          <span class="label">.mp3</span>
-          <span class="percentage">14%</span>
-        </li>
-        <li class="item">
-          <span class="label">.pdf</span>
-          <span class="percentage">41%</span>
-        </li>
-        <li class="item">
-          <span class="label">.mp4</span>
-          <span class="percentage">12%</span>
-        </li>
-      </ul>
-    </section>
+import {
+  Statistic,
+  UploudTitle,
+  StatList,
+  ListItem,
+  SpanLabel,
+  SpanPercentage,
+} from './Statistic.styled';
+
+export const Statistics = ({ title, stats }) => {
+  return (
+    <Statistic>
+      <UploudTitle>Upload stats</UploudTitle>
+
+      <StatList>
+        {stats.map(stat => (
+          <ListItem key={stat.id}>
+            <SpanLabel>{stat.label}</SpanLabel>
+            <SpanPercentage>{stat.percentage}%</SpanPercentage>
+          </ListItem>
+        ))}
+      </StatList>
+    </Statistic>
   );
+};
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(PropTypes.object),
 };

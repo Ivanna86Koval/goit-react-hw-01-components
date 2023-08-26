@@ -1,4 +1,4 @@
-import propType from 'prop-types';
+import propTypes from 'prop-types';
 import {
   Transactions,
   TableHead,

@@ -29,7 +29,7 @@ export const StatList = styled.ul`
 export const ListItem = styled.li`
   width: 100px;
   padding: 20px 30px;
-  background: rgb(9, 24, 164);
+  background: rgb(0, 188, 213);;
   color: rgb(255, 255, 255);
   text-align: center;
 `;

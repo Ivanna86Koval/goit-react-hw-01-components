@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { getRandomHexColor } from '../Utils/GetRendomHexColor';
 
 import {
   Statistic,
@@ -16,7 +17,7 @@ export const Statistics = ({ title, stats }) => {
 
       <StatList>
         {stats.map(stat => (
-          <ListItem key={stat.id}>
+          <ListItem key={stat.id}  style={{ backgroundColor: getRandomHexColor() }}>
             <SpanLabel>{stat.label}</SpanLabel>
             <SpanPercentage>{stat.percentage}%</SpanPercentage>
           </ListItem>

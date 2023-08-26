@@ -1,17 +1,18 @@
-// import { FriendListItem } from './FriendListItem';
+im; //port { FriendListItem } from './FriendListItem';
 
-export const FriendList = ({ items }) => {
+/*export const FriendList = ({ friends }) => {
   return (
     <ul>
-      {items.map(item => {
-        <li key={item.id}>
+      {friends.map(friend => {
+        <li key={friend.id}>
           <div>
-            <p>avatar {item.avatar}</p>
-            <p>name {item.name}</p>
-            <p>isOnline {item.isOnline}</p>
+            <p>avatar {friend.avatar}</p>
+            <p>name {friend.name}</p>
+            <p>isOnline {friend.isOnline}</p>
           </div>
         </li>;
       })}
     </ul>
   );
 };
+*/

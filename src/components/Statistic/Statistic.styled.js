@@ -24,27 +24,26 @@ export const StatList = styled.ul`
   list-style: none;
   display: flex;
   gap: 5px;
-  background-color: pink;
 `;
 
 export const ListItem = styled.li`
-  border: 2px solid #000;
+  width: 100px;
+  padding: 20px 30px;
+  background: rgb(9, 24, 164);
+  color: rgb(255, 255, 255);
+  text-align: center;
+`;
+
+export const SpanLabel = styled.span`
+  font-weight: 400;
+  line-height: 20px;
+`;
+export const SpanPercentage = styled.span`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
-  border-radius: 13px;
-
-  width: 70px;
-  height: 70px;
-  transition: scale 300ms, transform 300ms;
-`;
-export const SpanLabel = styled.span`
-  font-size: 22px;
-  color: #fff;
-`;
-export const SpanPercentage = styled.span`
-  font-size: 28px;
-  font-weight: 500;
-  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 16px;
+  margin-top: 10px;
 `;

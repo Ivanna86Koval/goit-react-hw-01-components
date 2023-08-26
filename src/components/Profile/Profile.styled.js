@@ -43,8 +43,7 @@ export const Active = styled.ul`
   align-items: center;
   justify-content: space-around;
   list-style: none;
-  background-color: #b79262;
-  border-top: 1px solid #6b4d26;
+  background-color: rgb(0, 188, 213);
   width: 100%;
 `;
 
@@ -52,7 +51,7 @@ export const UserActive = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #6b4d26;
+  border: 1px solid #e5ded7;
   width: 100%;
   padding: 10px;
 `;

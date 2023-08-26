@@ -1,23 +1,28 @@
 import styled from 'styled-components';
 
-export const TransactionHistory = styled.table`
-  background-color: #eabb7d;
+export const Transactions = styled.table`
+  background-color: white;
 
   border: 2px solid #000;
   border-radius: 30px;
 
-  box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 1px 5px 15px 5px #000000;
   width: 800px;
   padding: 20px;
   margin-bottom: 30px;
   transition: scale 300ms;
 `;
 export const TableHead = styled.th`
-  background: #b79262;
-  font-size: 28px;
-  font-weight: 500;
-  border-radius: 30px;
-  height: 40px;
-  padding: 7px;
-  border: 2px solid #000;
+  padding: 16px 50px;
+  background: rgb(0, 188, 213);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+`;
+
+export const TableDate = styled.td`
+  padding: 24px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
 `;
